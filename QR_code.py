@@ -23,7 +23,7 @@ def showcode():
 
 def save():
 #Save QRcode on desktop
-    dir = "C:\\Users\Your-User\Desktop"
+    #dir = "C:\\Users\Your-User\Desktop"
 #Save QRcode on QR Codes folder
     dir1 = os.getcwd() + "\\QR Codes" 
     if not os.path.exists(dir1):
@@ -32,7 +32,7 @@ def save():
     try:
         if len(name.get())!=0:
             qr.png(os.path.join(dir1,name.get()+".png"),scale=8)
-            qr.png(os.path.join(dir,name.get()+".png"),scale=8)
+            #qr.png(os.path.join(dir,name.get()+".png"),scale=8)
         else:
             messagebox.showinfo("Please enter a File Name")
     except:
