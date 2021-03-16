@@ -23,7 +23,7 @@ def showcode():
 
 def save():
 #Save QRcode on desktop
-    #dir = "C:\\Users\Your-User\Desktop"
+    #dir = "Your Desktop Path"
 #Save QRcode on QR Codes folder
     dir1 = os.getcwd() + "\\QR Codes" 
     if not os.path.exists(dir1):
