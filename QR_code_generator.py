@@ -1,4 +1,3 @@
-#Author: GyroGyro#5550 on discord
 
 from tkinter import *
 from tkinter import messagebox
