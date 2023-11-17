@@ -38,6 +38,7 @@ def on_generate_button_click():
 root = tk.Tk()
 root.title("QR Code Generator")
 root.configure(bg='#122b49')
+root.iconbitmap(default="icon.ico")
 
 # [✔] 🠗 Create and place widgets 🠗 
 frame = tk.Frame(root, padx=20, pady=20, bg='#122b49', relief=tk.RIDGE, bd=2)  
@@ -61,7 +62,6 @@ generate_button.grid(row=4, column=0, columnspan=2, pady=(10, 0))
 result_label = tk.Label(frame, text="", font=("Arial", 12), fg="#459bfa", bg='#122b49', pady=10)
 result_label.grid(row=5, column=0, columnspan=2)
 
-# [✔] 🠗 Credits 🠗 
 author_name_label = tk.Label(frame, text="Author: ~Gყɾσ", font=("Arial", 10), bg='#122b49', fg='white')
 author_name_label.grid(row=7, column=0, columnspan=2, sticky="se")
 
